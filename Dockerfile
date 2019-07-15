@@ -9,9 +9,9 @@ pip install Torch && \
 pip install PyBrain && \
 pip install plotly && \
 pip install cufflinks && \
-pip install bokeh .y
+pip install bokeh 
  
-RUN conda update -n base conda
+RUN conda update -n base conda -y
  
 RUN conda install -c r r -y \
 conda install -c r/label/archive r && \
