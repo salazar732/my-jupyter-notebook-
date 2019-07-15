@@ -13,9 +13,9 @@ pip install bokeh
  
 RUN conda update -n base conda -y
  
-RUN conda install -c r r -y \
-conda install -c r/label/archive r && \
-conda install -c r r-essentials && \
+RUN conda install -c r r -y && \
+conda install -c r/label/archive r -y && \
+conda install -c r r-essentials -y && \
 conda install -c r r-devtools -y && \
 conda install pandas -y && \
 conda install -c anaconda numpy -y && \
