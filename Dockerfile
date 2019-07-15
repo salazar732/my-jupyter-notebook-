@@ -9,16 +9,17 @@ pip install Torch && \
 pip install PyBrain && \
 pip install plotly && \
 pip install cufflinks && \
-pip install bokeh
-
-RUN conda install -c r r && \
+pip install bokeh .y
+ 
+RUN conda update -n base conda
+ 
+RUN conda install -c r r -y \
 conda install -c r/label/archive r && \
 conda install -c r r-essentials && \
 conda install -c r r-devtools -y && \
 conda install pandas -y && \
 conda install -c anaconda numpy -y && \
-conda install scikit-learn && \
-conda install pytorch torchvision cudatoolkit=9.0 -c pytorch -y && \
+conda install scikit-learn -y && \
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch -y && \
-conda install plotly && \
-conda install numpy 
+conda install plotly -y && \
+conda install numpy -y
