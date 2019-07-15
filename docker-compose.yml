@@ -1,0 +1,6 @@
+datascience:
+  build: .
+  hostname: datascience
+  
+  ports:
+  - "8888:8888"
