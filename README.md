@@ -1,1 +1,1 @@
-# my-jupyter-notebook-in-docker
+# my jupyter notebook in docker
